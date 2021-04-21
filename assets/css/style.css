@@ -72,7 +72,7 @@ ul li a {
   transition: 0.1s;
 }
 
-ul li a.active{
+ul li a.selected{
   color: black;
 }
 
@@ -97,7 +97,6 @@ ul li a:hover{
   height: 100%;
   display: flex;
   align-items: center;
-  background-color: cornflowerblue
 }
 
 .header-right > ul {
@@ -113,4 +112,48 @@ ul li a:hover{
 
 .header-right .header-buttons a {
   text-decoration: none;
+}
+
+/* DROPDOWN */
+.header-right > ul > li {
+  position: relative;
+}
+
+.header-right .dropdown {
+  position: absolute;
+  display: none;
+  top: 40px;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.dropdown .dropdown-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.dropdown .dropdown-list li {
+  margin: 10px 0;
+}
+
+.dropdown .dropdown-list li h5 {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.dropdown-list a {
+  font-size: 15px;
+}
+
+.dropdown.features {
+  width: 800px;
+  left: -300px;
+}
+
+.active{
+  display: flex;
 }
