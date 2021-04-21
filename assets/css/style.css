@@ -1,0 +1,116 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  font-family: sans-serif;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px gray;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-gray {
+  color: black;
+  background-color: lightgray;
+}
+
+.btn-black {
+  color: white;
+  background-color: black;
+}
+
+.header-wrapper {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.1s;
+}
+
+ul li a.active{
+  color: black;
+}
+
+ul li a:hover{
+  color: black;
+}
+
+/* HEADER-LEFT */
+.header-left {
+  width: 30%;
+  height: 100%;
+  background-color: lightgreen;
+}
+
+.header-left .header-logo {
+  margin-right: 100px;
+}
+
+/* HEADER-RIGHT */
+.header-right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue
+}
+
+.header-right > ul {
+  width: 70%;
+  margin-left: 200px;
+}
+
+.header-right .header-buttons{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-right .header-buttons a {
+  text-decoration: none;
+}
